@@ -2,6 +2,8 @@ syntax="proto3";
 
 package townville.currency.v1;
 
+option go_package = "github.com/mcquackers/buf-petstore/submodule/townville/currency/v1";
+
 message Currency {
   string amount = 1;
 }

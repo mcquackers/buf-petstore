@@ -4,16 +4,9 @@ package townville.petstore.v1;
 
 option go_package = "github.com/mcquackers/buf-petstore/townville/petstore/v1";
 import "townville/currency/v1/currency.proto";
-import "google/api/http.proto";
-import "google/api/annotations.proto";
 
 service PetStoreService {
-  rpc PurchasePet(PurchasePetRequest) returns (PurchasePetResponse) {
-      option (google.api.http) ={
-        post: "/v1/pet/purchase"
-        body: "*"
-      };
-      }
+  rpc PurchasePet(PurchasePetRequest) returns (PurchasePetResponse) {}
 }
 
 message PurchasePetRequest {
