@@ -11,13 +11,13 @@ buf-petstore
 |--buf.yaml
 |--buf.lock
 |--buf.work.yaml
-|\_\_townville
-|  |\_\_petstore
-|    |\_\_v1
-|      |\_\_petstore.proto
-|\_\_submodule
-|  |\_\_townville
-|    |\_\_currency
-|      |\_\_v1
-|        |\_\_currency.proto
+|__townville
+|  |__petstore
+|    |__v1
+|      |__petstore.proto
+|__submodule
+|  |__townville
+|    |__currency
+|      |__v1
+|        |__currency.proto
 ```
