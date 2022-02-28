@@ -6,6 +6,7 @@ I found that when using a subdirectory/submodule whose path includes a path alre
 Individual steps going from successful generation with no-workspace/remote-deps to workspace/failing-remote-deps are listed in the commit messages
 
 Example:
+```
 buf-petstore
 |--buf.yaml
 |--buf.lock
@@ -19,3 +20,4 @@ buf-petstore
 |    |\_\_currency
 |      |\_\_v1
 |        |\_\_currency.proto
+```
