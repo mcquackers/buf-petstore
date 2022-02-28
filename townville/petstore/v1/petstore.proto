@@ -3,7 +3,7 @@ syntax="proto3";
 package townville.petstore.v1;
 
 option go_package = "github.com/mcquackers/buf-petstore/townville/petstore/v1";
-//import "townville/currency/v1/currency.proto";
+import "townville/currency/v1/currency.proto";
 import "google/api/http.proto";
 import "google/api/annotations.proto";
 
@@ -18,11 +18,7 @@ service PetStoreService {
 
 message PurchasePetRequest {
   string pet_name = 1;
-  Currency payment = 2;
+  townville.currency.v1.Currency payment = 2;
 }
 
 message PurchasePetResponse{}
-
-message Currency {
-  string amount = 1;
-}

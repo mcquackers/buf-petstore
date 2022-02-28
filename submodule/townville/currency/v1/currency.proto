@@ -1,0 +1,7 @@
+syntax="proto3";
+
+package townville.currency.v1;
+
+message Currency {
+  string amount = 1;
+}
